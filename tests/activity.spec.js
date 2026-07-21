@@ -17,4 +17,7 @@ test("UI control",async({page})=>{
     await expect(page.locator(".radioButton").first()).toBeChecked();
 
     console.log(await page.locator(".radioButton").first().isChecked());
+
+    console.log(await page.locator(".radioButton").nth(1).isChecked());
+    const radioButtons = page.locator(".radioButton");
 })
