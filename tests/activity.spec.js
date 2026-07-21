@@ -20,4 +20,5 @@ test("UI control",async({page})=>{
 
     console.log(await page.locator(".radioButton").nth(1).isChecked());
     const radioButtons = page.locator(".radioButton");
+    console.log(await radioButtons.count());
 })
